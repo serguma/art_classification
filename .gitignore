@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+venv/
+.ipynb_checkpoints
+data/
+imagenes/
+imagenes_color/
+features/
