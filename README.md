@@ -27,7 +27,7 @@ Además de las imágenes se han guardado el autor, título de la obra y el año 
 
 ## Estructura del repositorio
 
-**/**: Archivos de jupyter notebook, durante el desarrollo del proyecto
+**/**: Archivos de jupyter notebook, durante el desarrollo del proyecto  
 **api/** : Api web  
 **data/**: Archivos csv con información sobre las imágenes  
 **features/** : Features obtenidas de las imágenes  
