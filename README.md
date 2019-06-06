@@ -6,7 +6,7 @@ El objetivo del proyecto es entrenar un módelo que pueda diferenciar estilos
 de pinturas.  
 
 En un principio se optó por cuatro estilos (abstracto, realismo, surrealismo y pop-art). Dado que las primeras métricas obtenidas estaban entre un 55 y 63 por ciento.  
-Se decidió entrenar al módelo con dos estilos diferentes (abstracto, realismo).
+Se decidió entrenar al clasificador con dos estilos diferentes (abstracto, realismo).
 Para posteriormente ir aumentando el número de estilos.  
 
 En este proyecto podemos ver el desarrollo para diferenciar dos estilos de arte  
@@ -57,10 +57,32 @@ Cargar en un navegador la url http://127.0.0.1:5000/
 
 Para realizar la api se ha utilizado Flask  
 
-## Mejoras
+## Anotaciones
+Los jupyter notebook han sido tratados de forma independiente  
+por los que existen varias funciones iguales en ellos.  
+
+Se ha creado un archivo funciones.py que puede ser importado por estos,  
+en el cual están declaradas varias funciones comunes y variables  
+
+Para la api se ha utilizado un csv con datos de las obras y poder  
+comparar si el resultado es el correcto  
+
+Por lo que la api utiliza los datos de este csv en el que aparecen las url de las  
+imágenes para poder ser descargadas y utilizadas para validar el clasificador.  
+
+## Imágenes
+
+Se pueden encontrar varias imágenes con gráficas y métricas de la CNN y de los clasificadores
+
+## Mejoras y ampliación
 
 Unas de las mejoras principales es conseguir un modelo que pueda diferenciar 
-al menos cuatro estilos de pinturas.  
+más estilos de pinturas.  
 
-Entrenar con más obras de otras épocas
+Entrenar con más obras de otras épocas  
+
+Utilizar la api desde una app móvil
+
+
+
 
