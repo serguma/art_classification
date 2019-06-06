@@ -6,3 +6,4 @@ data/
 imagenes/
 imagenes_color/
 features/
+__pycache__/

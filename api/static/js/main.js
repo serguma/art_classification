@@ -44,15 +44,23 @@ $(document).ready(function () {
             success: function (data) {
                 
                 info = jQuery.parseJSON(data[1]);
+                    
+                if(info['estilo'] == data[0]){
+                    $('#result').addClass('c-si')
+                    $('#result').removeClass('c-no')
+                }else{
+                    $('#result').removeClass('c-si')
+                    $('#result').addClass('c-no')
+                }
 
                 $('.loader').hide();
                 $('#result').fadeIn(600);
                 $('#datos').fadeIn(800);
-                $('#result').text(' Es:  ' + data[0]);
-                $('#datos').html('Artista: ' + info['artistName']
-                                + '<br/>Título: ' + info['title']
-                                + '<br/>Año:' + info['year']
-                                + '<br/>Estilo:<span>' + info['estilo'] +'</span>' )
+                $('#result').text('Estilo: ' + data[0]);
+                $('#datos').html('Datos de la obra: <br/><span>Artista:</span> ' + info['artistName']
+                                + '<br/><span>Título:</span> ' + info['title']
+                                + '<br/><span>Año:</span> ' + info['year']
+                                + '<br/><span>Estilo:</span> ' + info['estilo'] )
                 console.log(data[0])
                 console.log(jQuery.parseJSON(data[1]))
                 console.log('Success!');
