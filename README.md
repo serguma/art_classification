@@ -58,17 +58,13 @@ Cargar en un navegador la url http://127.0.0.1:5000/
 Para realizar la api se ha utilizado Flask  
 
 ## Anotaciones
-Los jupyter notebook han sido tratados de forma independiente  
-por los que existen varias funciones iguales en ellos.  
+Los jupyter notebook han sido tratados de forma independiente por los que existen varias funciones iguales en ellos.  
+ 
+Se ha creado un archivo funciones.py que puede ser importado por estos, en el cual están declaradas varias funciones comunes y variables  
 
-Se ha creado un archivo funciones.py que puede ser importado por estos,  
-en el cual están declaradas varias funciones comunes y variables  
+Para la api se ha utilizado un csv con datos de las obras y poder comparar si el resultado es el correcto  
 
-Para la api se ha utilizado un csv con datos de las obras y poder  
-comparar si el resultado es el correcto  
-
-Por lo que la api utiliza los datos de este csv en el que aparecen las url de las  
-imágenes para poder ser descargadas y utilizadas para validar el clasificador.  
+Por lo que la api utiliza los datos de este csv en el que aparecen las url de las imágenes para poder ser descargadas y utilizadas para validar el clasificador.  
 
 ## Imágenes
 
